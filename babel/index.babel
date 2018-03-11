@@ -1,0 +1,140 @@
+class Headline extends React.Component {
+	render() {
+		return (
+			<div className="text-center">
+
+				<h1 className="display-1">Bill Evans</h1>
+
+				<h2 className="">One of the greatest jazz pianists</h2>
+
+			</div>
+		);
+	}
+}
+
+class Picture extends React.Component {
+	render() {
+		return (
+			<div className="text-center">
+
+				<img className="img-thumbnail" src="http://bit.ly/2DcvCiv" alt="Bills Evans playing piano, smoking a cigarette"/>
+
+				<p className="">Bill Evans playing his beautiful piano</p>
+
+			</div>
+		);
+	}
+}
+
+class Timeline extends React.Component {
+	render() {
+		return (
+			<div className="row">
+
+				<div className="col-md-2"></div>
+
+				<div className="col-md-8">
+
+					<h3 className="text-center">Here's a timeline of Bill Evans' life:</h3>
+
+					<ul>
+						<li><strong>1929</strong> - Born in Plainfield, New Jersey</li>
+						<li><strong>1946</strong> - Attends Southeastern Louisiana University on a flute scholarship</li>
+						<li><strong>1950</strong> - Performs Beethoven's Piano Concerto No.3 for his senior recital, graduating with a Bachelor of Music degree, majoring in piano, and Bachelor's in Music Education</li>
+						<li><strong>1951-1954</strong> - Plays flute, piccolo, and piano in the Fifth U.S. Army Band at Fort Sheridan</li>
+						<li><strong>1953</strong> - Composes his most well known tune, "Waltz for Debby," for his young niece</li>
+						<li><strong>1955</strong> - Returned to New York City and enrolled in the Mannes College of Music for a three-semester postgraduate course in musical composition</li>
+						<li><strong>1956</strong> - Works with George Russel</li>
+						<li><strong>1958</strong> - Auditions for Miles Davis' band and joins</li>
+						<li><strong>1959</strong> - Records <em>Kind of Blue</em> with Miles Davis and <em>Portrait in Jazz</em> with Scott LaFaro and Paul Motian</li>
+						<li><strong>1961</strong> - Records <em>Explorations</em></li>
+						<li><strong>1980</strong> - Dies</li>
+					</ul>
+
+				</div>
+
+				<div className="col-md-2"></div>
+
+			</div>
+		);
+	}
+}
+
+class Quote extends React.Component {
+	render() {
+		return (
+			<div className="row">
+
+				<div className="col-md-2"></div>
+
+				<div className="col-md-8">
+
+					<blockquote>
+						<p className="lead">"How do you think your playing has changed since you first started? Is it deliberate or is it just happening to change?"</p>
+						<p className="lead">"Bill Evans: "Well it's deliberate, ahh but I stay along the same lines...I try to get a little deeper into what I'm doing. As far as that kind of playing goes, [jazz playing rather than an earlier example where he played Waltz for Debbie without
+							any improvisation or sense of swing], I think my left hand is a little more competent and uhh...of course I worked a lot on inner things happening like inner voices I've worked on."</p>
+						<footer>
+							<cite>- Marian McPartland</cite>
+						</footer>
+
+					</blockquote>
+
+					<h3>To read more about Bill Evans, head to <a href="https://en.wikipedia.org/wiki/Bill_Evans" target="_blank">Wikipedia</a></h3>
+
+				</div>
+
+				<div className="col-md-2"></div>
+
+			</div>
+		);
+	}
+}
+
+class Footer extends React.Component {
+	render() {
+		return (
+			<footer class="">
+				<hr />
+				<p className="text-center">By David Narintarangkool</p>
+			</footer>
+		);
+	}
+}
+
+class Profile extends React.Component {
+	render() {
+		return (
+			<div>
+				<div className="jumbotron">
+
+					<Headline />
+
+					<Picture />
+
+					<Timeline />
+
+					<Quote />
+
+				</div>
+				
+				<Footer />
+				
+			</div>
+		);
+	}
+}
+
+class App extends React.Component {
+	render() {
+		return (
+			<Profile />
+		); 
+	}
+}
+
+
+ReactDOM.render(
+	<App />,
+	document.getElementById('root')
+);
+
